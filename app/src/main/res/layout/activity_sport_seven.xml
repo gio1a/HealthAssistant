@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SportZhiActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/basecolor"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <RelativeLayout
+                android:id="@+id/reBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/back_selector">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/item_edge"
+                    android:layout_marginRight="@dimen/item_edge"
+                    android:src="@mipmap/icon_back_white"
+                     />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLength="12"
+                android:text="哑铃蹬台阶"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/title" />
+
+            <RelativeLayout
+                android:id="@+id/reRight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/back_selector">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/item_edge"
+                    android:layout_marginRight="@dimen/item_edge"
+                    android:src="@mipmap/icon_sport"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/image_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sport_seven"
+        android:scaleType="fitXY"></pl.droidsonroids.gif.GifTextView>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="运动方法：双脚并拢站立于长凳前，双手握住哑铃，将右脚登到长凳上，然后左脚也踏上来，整个身体站立于长凳上，然后将右脚向下移动至地面，然后左腿也随之移动至地面，使身体恢复至初始位置，如此反复。"></TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:text="理由：通过激活大腿肌肉练习四头肌，臀部肌肉，腿筋。这是整个腿部一天的动作。此外，它具有减缓冲击力作用，这意味着可以避免与更具爆发力的练习造成的膝盖伤害。"></TextView>
+</LinearLayout>

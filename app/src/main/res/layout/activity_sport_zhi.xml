@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SportZhiActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/basecolor"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <RelativeLayout
+                android:id="@+id/reBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/back_selector">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/item_edge"
+                    android:layout_marginRight="@dimen/item_edge"
+                    android:src="@mipmap/icon_back_white"
+                     />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLength="12"
+                android:text="俯卧撑"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/title" />
+
+            <RelativeLayout
+                android:id="@+id/reRight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/back_selector">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/item_edge"
+                    android:layout_marginRight="@dimen/item_edge"
+                    android:src="@mipmap/icon_sport"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/image_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fuwochen"
+        android:scaleType="fitXY"></pl.droidsonroids.gif.GifTextView>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="运动方法：面朝下俯撑在地板上，身体挺直，从头到脚成一条直线，双手分开肩宽，保持身体挺直，慢慢弯曲手臂使身体下降，同时吸气，直到你的胸部离地面一英寸，然后快速伸直手臂，将身体撑回起始位置。"></TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:text="理由： 这个动作使用多个肌肉群来最大限度地增长并加强肩关节。这可以轻松地在家中进行锻炼，为您在健身房中进行更苛刻的肩部锻炼做好准备，例如倾斜卧推。"></TextView>
+</LinearLayout>

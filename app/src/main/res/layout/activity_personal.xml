@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RootLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/sys_bg">
+
+	<android.support.design.widget.AppBarLayout
+		android:id="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+		android:background="@color/basecolor"
+		android:orientation="vertical">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/title_height">
+
+			<RelativeLayout
+				android:id="@+id/reBack"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentStart="true"
+				android:background="@drawable/back_selector">
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:layout_marginLeft="@dimen/item_edge"
+					android:layout_marginRight="@dimen/item_edge"
+					android:src="@mipmap/icon_back_white" />
+			</RelativeLayout>
+			<TextView
+				android:id="@+id/tv_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:ellipsize="end"
+				android:lines="1"
+				android:maxLength="12"
+				android:text="个人信息"
+				android:textColor="@color/text_color_white"
+				android:textSize="@dimen/title" />
+
+			<RelativeLayout
+				android:id="@+id/reRight"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:background="@drawable/back_selector">
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:visibility="gone"
+					android:layout_marginLeft="@dimen/item_edge"
+					android:layout_marginRight="@dimen/item_edge"
+					android:src="@mipmap/icon_sport" />
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+	</android.support.design.widget.AppBarLayout>
+
+		<LinearLayout
+			android:layout_below="@+id/header"
+			android:id="@+id/PersonalContent"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_margin="10dp"
+			android:background="@drawable/content_bg">
+
+			<include layout="@layout/widget_sex_selecter"
+
+				android:id="@+id/PersonalSex"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:background="@color/divider"/>
+
+			<include layout="@layout/widget_height_input"/>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:background="@color/divider"/>
+
+			<include layout="@layout/widget_layout"/>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:background="@color/divider"/>
+
+			<include layout="@layout/widget_heart_input"/>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:background="@color/divider"/>
+			<include layout="@layout/widget_yao_input"/>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:background="@color/divider"/>
+			<include layout="@layout/widget_xiong_input"/>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:background="@color/divider"/>
+
+			<include layout="@layout/widget_birthday_selecter"/>
+
+		</LinearLayout>
+
+	<Button
+		android:id="@+id/save"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:textColor="@color/white"
+		android:text="@string/save_info"
+		android:textSize="22dp"
+		android:onClick="onClickSaveInfo"
+		android:textStyle="bold"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="10dp"
+		android:layout_gravity="center_horizontal"
+		android:background="@drawable/blue_btn_selector"/>
+
+
+</RelativeLayout>

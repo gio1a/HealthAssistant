@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RootLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/sys_bg">
+
+	<android.support.design.widget.AppBarLayout
+		android:id="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/basecolor"
+		android:orientation="vertical"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/title_height">
+
+			<RelativeLayout
+				android:id="@+id/reBack"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentStart="true"
+				android:background="@drawable/back_selector">
+
+				<ImageView
+
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:layout_marginLeft="@dimen/item_edge"
+					android:layout_marginRight="@dimen/item_edge"
+					android:src="@mipmap/icon_back_white"
+					/>
+			</RelativeLayout>
+
+			<TextView
+				android:id="@+id/tv_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:ellipsize="end"
+				android:lines="1"
+				android:maxLength="12"
+				android:text="心率知识"
+				android:textColor="@color/text_color_white"
+				android:textSize="@dimen/title" />
+
+			<RelativeLayout
+				android:id="@+id/reRight"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:background="@drawable/back_selector">
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:layout_marginLeft="@dimen/item_edge"
+					android:layout_marginRight="@dimen/item_edge"
+					android:src="@mipmap/icon_sport"
+					android:visibility="gone" />
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+	</android.support.design.widget.AppBarLayout>
+<ScrollView
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+
+	>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:text="心率是指正常人安静状态下每分钟心跳的次数，也叫安静心率，一般为60～100次/分，可因年龄、性别或其他生理因素产生个体差异。一般来说，年龄越小，心率越快，老年人心跳比年轻人慢，女性的心率比同龄男性快，这些都是正常的生理现象。安静状态下，成人正常心率为60～100次/分钟，理想心率应为55～70次/分钟（运动员的心率较普通成人偏慢，一般为50次/分钟左右）。"></TextView>
+
+		<TextView
+			android:textStyle="bold"
+			android:layout_margin="10dp"
+			android:textSize="20dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="日常保健"></TextView>
+		<TextView
+			android:textSize="16dp"
+			android:layout_marginLeft="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="1.运动"></TextView>
+		<TextView
+			android:layout_margin="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="常参加各种强度适宜的运动，就会使静息心率变慢。虽然运动时心率加快，但运动能使心功能得到锻炼，从而使静息心率减慢。一般适宜的运动心率是“170-年龄”，如一个50岁人，运动心率控制在120次/分钟为宜，过快说明运动量过大，达不到也起不到效果。运动前要自觉舒适、无疲劳感，一般运动不要超过1小时，而且每次最佳时间为30分钟～60分钟，每周至少坚持3次运动。"></TextView>
+
+
+		<TextView
+			android:textSize="16dp"
+			android:layout_marginLeft="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="2.改正不良的生活方式"></TextView>
+		<TextView
+			android:layout_margin="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="熬夜、吸烟、饮酒均可使静息心率加快。少喝浓茶，特别是不要在睡前喝，否则容易导致失眠。还应定时大便，保持排便顺畅。"></TextView>
+		<TextView
+			android:textSize="16dp"
+			android:layout_marginLeft="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="3.保持适当体重"></TextView>
+		<TextView
+			android:layout_margin="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="肥胖会使心脏负担加重，心率加快，因此肥胖者要通过健身运动，调节饮食来保持适宜的体重。"></TextView>
+
+		<TextView
+			android:textSize="16dp"
+			android:layout_marginLeft="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="4.保持心态平和"></TextView>
+		<TextView
+			android:layout_margin="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="生活中心态要平和，不要总着急、生气，如果因为紧张、生气等情况出现心率过快，可以通过听音乐、静心冥想等方式逐渐恢复平静。"></TextView>
+
+		<TextView
+			android:textSize="16dp"
+			android:layout_marginLeft="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="5.药物治疗"></TextView>
+		<TextView
+			android:layout_margin="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="某些疾病如高血压及冠心病引起的心率加快，可根据医嘱服用药物，使心率减慢，保护心脏，减少与控制心肌缺血事件，改善心功能，延长寿命。"></TextView>
+
+
+	</LinearLayout>
+</ScrollView>
+
+</LinearLayout>

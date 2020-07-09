@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/sys_bg">
+	<android.support.design.widget.AppBarLayout
+		android:id="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginTop="20dp"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+		android:background="@color/basecolor"
+		android:orientation="vertical">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/title_height">
+
+			<RelativeLayout
+				android:id="@+id/reBack"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentStart="true"
+				android:background="@drawable/back_selector">
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:visibility="gone"
+					android:layout_marginLeft="@dimen/item_edge"
+					android:layout_marginRight="@dimen/item_edge"
+					android:src="@mipmap/icon_back_white" />
+			</RelativeLayout>
+			<TextView
+				android:id="@+id/tv_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:ellipsize="end"
+				android:lines="1"
+				android:maxLength="12"
+				android:text="健身指导"
+				android:textColor="@color/text_color_white"
+				android:textSize="@dimen/title" />
+
+			<RelativeLayout
+				android:id="@+id/reRight"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentEnd="true"
+				android:background="@drawable/back_selector">
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:visibility="gone"
+					android:layout_marginLeft="@dimen/item_edge"
+					android:layout_marginRight="@dimen/item_edge"
+					android:src="@mipmap/icon_sport" />
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+	</android.support.design.widget.AppBarLayout>
+	<LinearLayout
+		android:id="@+id/line1"
+		android:layout_below="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="5dp"
+		android:background="@drawable/content_bg">
+
+		<include layout="@layout/widget_setting_item"
+			android:id="@+id/tv_one"/>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_below="@+id/line1"
+		android:id="@+id/line2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="5dp"
+		android:background="@drawable/content_bg">
+
+		<include layout="@layout/widget_setting_item"
+			android:id="@+id/tv_two"/>
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/line3"
+		android:layout_below="@+id/line2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="5dp"
+		android:background="@drawable/content_bg">
+
+		<include layout="@layout/widget_setting_item"
+			android:id="@+id/tv_three"/>
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/line4"
+		android:layout_below="@+id/line3"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="5dp"
+		android:background="@drawable/content_bg">
+
+		<include layout="@layout/widget_setting_item"
+			android:id="@+id/tv_four"/>
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/line5"
+		android:layout_below="@+id/line4"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="5dp"
+		android:background="@drawable/content_bg">
+
+		<include layout="@layout/widget_setting_item"
+			android:id="@+id/tv_five"/>
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/line6"
+		android:layout_below="@+id/line5"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="5dp"
+		android:background="@drawable/content_bg">
+
+		<include layout="@layout/widget_setting_item"
+			android:id="@+id/tv_six"/>
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/line7"
+		android:layout_below="@+id/line6"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="5dp"
+		android:background="@drawable/content_bg">
+
+		<include layout="@layout/widget_setting_item"
+			android:id="@+id/tv_seven"/>
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/line8"
+		android:layout_below="@+id/line7"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="5dp"
+		android:background="@drawable/content_bg">
+
+		<include layout="@layout/widget_setting_item"
+			android:id="@+id/tv_eight"/>
+
+	</LinearLayout>
+
+
+
+
+</LinearLayout>

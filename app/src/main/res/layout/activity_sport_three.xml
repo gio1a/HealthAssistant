@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SportZhiActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/basecolor"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <RelativeLayout
+                android:id="@+id/reBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/back_selector">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/item_edge"
+                    android:layout_marginRight="@dimen/item_edge"
+                    android:src="@mipmap/icon_back_white"
+                     />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLength="12"
+                android:text="哑铃农夫行走"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/title" />
+
+            <RelativeLayout
+                android:id="@+id/reRight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/back_selector">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/item_edge"
+                    android:layout_marginRight="@dimen/item_edge"
+                    android:src="@mipmap/icon_sport"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/image_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sport_three"
+        android:scaleType="fitXY"></ImageView>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="运动方法：每只手拿一个重哑铃，根据自身体质选取哑铃，并把它们放在身体两侧。二边手臂的要保持直线，往前走直线并且保持良好的姿势（脊椎和肩部处于中立位），保持核心的收缩，尽可能快地向前走，使用短步。"></TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:text="理由：超级简单，无需担心技术，此动作会增加肩部稳定，拥有强壮的握力、前臂、斜方肌及良好的姿势。"></TextView>
+</LinearLayout>
